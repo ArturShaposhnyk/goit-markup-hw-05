@@ -53,7 +53,7 @@
     <main>
     <section class="designation">
         <div class="container">
-        <h1 class="designation-title"
+        <h1 class="designation-title">
             Effective Solutions for Your Business
         </h1>
         <button data-modal-open class="order-button" type="button">
@@ -126,8 +126,8 @@
     </section>
     <section class="employ">
         <div class="container">
-          <h2 class="employ-title second-h">Our Team</h2>
-          <ul class="employ-list list">
+        <h2 class="employ-title second-h">Our Team</h2>
+        <ul class="employ-list list">
             <li class="employ-item">
                         <img src="./images/img(1).jpg" alt="mark-guerro" width="264" height="260" />
                         <div class="empl-item-wrapper">
@@ -278,7 +278,7 @@
                             </ul>
                         </div>
                     </li>
-          </ul>
+        </ul>
         </div>
     </section>
     <section class="customer section">
@@ -370,15 +370,89 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-wrap">
+                <p class="footer-form-text">
+                    Subscribe
+                </p>
+                <form class="footer-form">
+                    <label class="footer-lbl" for="footer-user-email">
+                        <input id="footer-user-email" type="email" name="user-email" class="footer-input"
+                            placeholder="E-mail">
+                    </label>
+                    <button class="footer-form-btn" type="submit">
+                        Subscribe
+                        <svg class="form-btn-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-btn"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-btn" type="button" data-modal-close>
                 <svg class="modal-icon" width="8" height="8">
                     <use href="./images/icons.svg#x-close"></use>
                 </svg>
             </button>
+            <p class="modal-form-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form" name="hero_form" autocomplete="off" novalidate>
+                <div class="field-wrap">
+                    <label for="user-name" class="form-lbl">
+                        Name
+                    </label>
+                    <div class="input-wrap">
+                        <input class="form-input" id="user-name" name="user-name" type="text" autofocus />
+                        <svg class="form-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-1-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <label for="user-tel" class="form-lbl">
+                        Phone
+                    </label>
+                    <div class="input-wrap">
+                        <input class="form-input" id="user-tel" type="tel" name="user-tel" />
+                        <svg class="form-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-2-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="field-wrap">
+                    <label for="user-email" class="form-lbl">
+                        Email
+                    </label>
+                    <div class="input-wrap">
+                        <input class="form-input" id="user-email" type="email" name="user-email" />
+                        <svg class="form-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-3-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="field-comment-wrap">
+                    <label for="user-comment" class="form-lbl">
+                        Comment
+                    </label>
+                    <textarea class="form-input-comment" id="user-comment" name="user-comment" placeholder="Text input">
+                    </textarea>
+                </div>
+                <div class="form-chbx-wrap">
+                    <input class="visually-hidden form-chbx-input" id="user-privacy" type="checkbox" value="true"
+                        name="user-privacy">
+                    <label class="form-chbx-lbl" for="user-privacy">
+                        <span class="chbx-lbl-span">
+                            <svg class="form-chbx-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a class="chbx-link" href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-form-btn" type="submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
