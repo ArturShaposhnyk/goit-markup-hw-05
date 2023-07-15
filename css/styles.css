@@ -127,8 +127,8 @@ button {
 
 /*---------HEADER--------- */
 .page-header {
-  border-bottom: 1px solid #e7e9fc;
-  background-color: #fff;
+  border-bottom: 1px solid var(--fold-button-color);
+  background-color: var(--backgr-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -214,7 +214,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--body-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-mt:hover,
@@ -263,7 +263,7 @@ button {
 .order-button:hover,
 .order-button:focus {
   color: var(--backgr-color);
-  background-color: #404bbf;
+  background-color: var(--backgr-button);
 }
 
 .designation-title {
@@ -455,8 +455,8 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 4px;
-  border: 1px solid #8e8f99;
-  color: #8e8f99;
+  border: 1px solid var(--light-grey-color);
+  color: var(--light-grey-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -467,8 +467,8 @@ button {
 
 .customer-link:hover,
 .customer-link:focus {
-  border-color: #404bbf;
-  color: #404bbf;
+  border-color: var(--backgr-button);
+  color: var(--backgr-button);
 }
 
 /*---------FOOTER--------- */
@@ -542,7 +542,7 @@ button {
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-  background-color: #31d0aa;
+  background-color: var(--green-color);
 }
 .footer-form-text {
   margin-bottom: 16px;
@@ -579,7 +579,7 @@ button {
   color: var(--backgr-color);
 }
 
-.footer-form-btn {
+.footer-form-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,20 +591,20 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--backgr-color);
   cursor: pointer;
-  background-color: #4d5ae5;
+  background-color: var(--subsid-color);
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-btn-icon {
+.form-button-icon {
   margin-left: 16px;
   fill: var(--backgr-color);
 }
 
-/*---------MODAL_BTN--------- */
+/*---------MODAL_button--------- */
 
 .backdrop {
   position: fixed;
@@ -638,7 +638,7 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn {
+.modal-button {
   padding: 0;
   position: absolute;
   top: 24px;
@@ -655,9 +655,9 @@ button {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #404bbf;
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--backgr-button);
   border: none;
 }
 
@@ -666,9 +666,9 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover .modal-icon,
-.modal-btn:focus .modal-icon {
-  fill: #ffffff;
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon {
+  fill: var(--backgr-color);
 }
 
 .modal-form-title {
@@ -680,14 +680,14 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark-bgr);
 }
 
 .field-wrap {
   margin-bottom: 8px;
 }
 
-.form-lbl {
+.form-lable {
   display: block;
   margin-bottom: 4px;
 
@@ -750,21 +750,21 @@ button {
 }
 
 .form-input-comment:focus {
-  border-color: #4d5ae5;
+  border-color: var(--subsid-color);
 }
 
-.form-chbx-wrap {
+.form-checkbox-wrap {
   margin-bottom: 24px;
 }
 
-.form-chbx-lbl {
+.form-checkbox-lable {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-grey-color);
 }
 
-.chbx-lbl-span {
+.checkbox-lable-span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -779,7 +779,7 @@ button {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-chbx-input:checked + .form-chbx-lbl .chbx-lbl-span {
+.form-checkbox-input:checked + .form-checkbox-lable .checkbox-lable-span {
   background-color: var(--backgr-button);
   border: none;
   fill: var(--log-stud-col);
@@ -789,7 +789,7 @@ button {
   color: var(--subsid-color);
 }
 
-.modal-form-btn {
+.modal-form-button {
   display: block;
   min-width: 169px;
   margin: 0 auto;
@@ -799,9 +799,9 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--backgr-color);
   cursor: pointer;
-  background-color: #4d5ae5;
+  background-color: var(--body-color);
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -814,25 +814,25 @@ button {
   padding-bottom: 120px;
 }
 
-.filters-btn-list {
+.filters-button-list {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
 }
 
-.btn-filter {
+.button-filter {
   padding: 12px 24px;
-  background: #f4f4fd;
+  background: var(--log-stud-col);
   border-radius: 4px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--fold-button-color);
 
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #4d5ae5;
+  color: var(--subsid-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -840,10 +840,10 @@ button {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-filter:hover,
-.btn-filter:focus {
-  background-color: #404bbf;
-  color: #ffffff;
+.button-filter:hover,
+.button-filter:focus {
+  background-color: var(--backgr-button);
+  color: var(--backgr-color);
   cursor: pointer;
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -866,7 +866,7 @@ button {
 .filters-title-box {
   display: block;
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--fold-button-color);
   border-top: none;
 }
 
