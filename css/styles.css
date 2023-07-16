@@ -476,12 +476,11 @@ button {
 .footer {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-logo {
-  display: block;
-  width: 264px;
+  max-width: 264px;
+  margin-right: 120px;
 }
 
 .page-footer {
@@ -506,7 +505,9 @@ button {
 .footer-txt-logo {
   color: var(--log-stud-col);
 }
-
+.footer-soc {
+  margin-right: auto;
+}
 .footer-soc-list {
   display: flex;
   gap: 16px;
@@ -597,6 +598,11 @@ button {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-button:hover,
+.footer-form-button:focus {
+  color: var(--backgr-color);
+  background-color: var(--backgr-button);
 }
 
 .form-button-icon {
@@ -747,6 +753,7 @@ button {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
 }
 
 .form-input-comment:focus {
@@ -762,6 +769,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-grey-color);
+  display: block;
 }
 
 .checkbox-lable-span {
@@ -769,7 +777,7 @@ button {
   align-items: center;
   justify-content: center;
   fill: transparent;
-
+  margin-right: 8px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -807,6 +815,11 @@ button {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-button:hover,
+.modal-form-button:focus {
+  color: var(--backgr-color);
+  background-color: var(--backgr-button);
 }
 
 /*---------PORTFOLIO--------- */
